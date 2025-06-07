@@ -14,13 +14,13 @@ int main(int argc, char *argv[]) {
 	double result = 0, memory = 0;
 	while (1) {
 		printf("输入表达式（或命令 exit/C/MS/MR/MC/M+/M-）：");
-		fgets(input, sizeof(input), stdin);//编译器说gets()is always unsafe，让我换成fgets
+		fgets(input, sizeof(input), stdin);
 		for (int i = 0; i < 666; i++) {
 			if (input[i] == '\n') {
 				input[i] = '\0';
 				break;
 			}
-		}  // 去掉换行符,可能不太合适，别无他法
+		}  // 去掉换行符,可能不太合适，暂时没有好办法
 
 		if (strcmp(input, "exit") == 0) break;
 		if (strcmp(input, "C") == 0) {
