@@ -1,6 +1,6 @@
 [Project]
-filename = 四则运算齐.dev
-name = 四则运算齐
+filename = 四则运算器.dev
+name = 四则运算器
 UnitCount = 1
 Type = 1
 Ver = 3
